@@ -110,7 +110,7 @@ button a {
 /*PICK AN EVENT STYLES*/
 .event-container {
   background-color: #f5c645;
-  padding: 200px 0;
+  padding: 200px 0 200px 150px;
 }
 
 .event-wrapper {
@@ -118,40 +118,58 @@ button a {
   align-items: center;
   flex-direction: row-reverse;
   justify-content: center;
-  gap: 150px;
+  gap: 100px;
 }
 
 .event-text {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  flex: 2;
 }
 
 .event-text .events {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 600px;
 }
 
-.event-text .events span {
-  border: 1px solid black;
-  border-radius: 30px;
-  padding: 15px;
-  font-size: 20px;
-  font-weight: 500;
+.event-text .events .event-img img {
+  width: 280px;
+  height: 150px;
+  border-radius: 10px;
 }
 
-.event-text .events span:hover {
-  border: 1px solid #f5c645;
-  background-color: black;
-  color: #f5c645;
+.event-text .events .event-img {
+  position: relative;
   cursor: pointer;
+}
+
+.event-text .events .event-img p {
+  background-color: black;
+  width: 70px;
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  border-radius: 5px;
+  opacity: 0.5;
 }
 
 .selected {
   border: 1px solid #f5c645;
   background-color: black;
   color: #f5c645;
+}
+
+.event-form {
+  flex: 1;
 }
 
 .event-form form {
@@ -389,9 +407,34 @@ form div {
     text-align: center;
   }
 
-  .event-text .events span {
-    padding: 7px;
+  .event-text .events {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 200px;
+  }
+
+  .event-text .events .event-img img {
+    width: 140px;
+    height: 75px;
+  }
+
+  .event-text .events .event-img p {
+    background-color: black;
+    width: 70px;
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
     font-size: 13px;
+    border-radius: 5px;
+    opacity: 0.5;
   }
 
   .event-form form div label {
