@@ -9,7 +9,7 @@
 .nav-container {
   background-color: black;
   padding: 0 50px;
-  border-bottom: 3px solid gray;
+  border-bottom: 3px solid #f5c645;
 }
 
 .nav-wrapper {
@@ -27,7 +27,25 @@
   color: #f5c645;
 }
 
-.join button {
+.join {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.join button:first-child {
+  border: 1px solid #f5c645;
+  background-color: black;
+  color: #f5c645;
+  font-weight: 700;
+  height: 50px;
+  width: 150px;
+  border-radius: 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.join button:last-child {
   border: 1px solid #f5c645;
   background-color: #f5c645;
   color: black;
@@ -37,6 +55,11 @@
   border-radius: 30px;
   font-size: 20px;
   cursor: pointer;
+}
+
+.to-event {
+  color: #f5c645;
+  text-decoration: none;
 }
 
 button a {
@@ -84,9 +107,92 @@ button a {
   height: 500px;
 }
 
+/*PICK AN EVENT STYLES*/
+.event-container {
+  background-color: #f5c645;
+  padding: 200px 0;
+}
+
+.event-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 150px;
+}
+
+.event-text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.event-text .events {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.event-text .events span {
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.event-text .events span:hover {
+  border: 1px solid #f5c645;
+  background-color: black;
+  color: #f5c645;
+  cursor: pointer;
+}
+
+.selected {
+  border: 1px solid #f5c645;
+  background-color: black;
+  color: #f5c645;
+}
+
+.event-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 550px;
+}
+
+.event-form form div label {
+  font-weight: 600;
+  font-size: 20px;
+  color: black;
+}
+
+.event-form form div input {
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  outline: none;
+  color: #f5c645;
+}
+
+.event-form form button {
+  background-color: black;
+  border: 1px solid black;
+  color: #f5c645;
+  border-radius: 30px;
+  height: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  height: 40px;
+}
+
 /*BOTTOM SECTION STYLES*/
 .bottom-container {
-  background-color: #f5c645;
+  background-color: black;
   display: flex;
   padding: 100px 0 100px 150px;
   align-items: center;
@@ -107,14 +213,17 @@ button a {
 
 .bottom-text h1 {
   font-size: 50px;
+  color: #f5c645;
 }
 
 .bottom-text p {
   font-size: 20px;
+  color: #f5c645;
 }
 
 .bottom-text span {
   font-size: 20px;
+  color: #f5c645;
 }
 
 .bottom-form {
@@ -133,46 +242,55 @@ form div {
   flex-direction: column;
 }
 
-div label {
+.bottom-form form div label {
   font-weight: 600;
   font-size: 20px;
+  color: #f5c645;
 }
 
-div input {
+.bottom-form form div input {
   height: 30px;
   border: 1px solid #f5c645;
   border-radius: 30px;
   padding: 10px;
+  font-size: 20px;
+  font-weight: 600;
   outline: none;
+  color: #f5c645;
 }
 
-div .textarea {
+.bottom-form form div .textarea {
   height: 100px;
   border: 1px solid #f5c645;
   border-radius: 30px;
   padding: 10px;
+  color: #f5c645;
+  font-size: 20px;
+  font-weight: 600;
   outline: none;
 }
 
-form button {
-  background-color: black;
-  border: 1px solid black;
-  color: #f5c645;
+.bottom-form form button {
+  background-color: #f5c645;
+  border: 1px solid #f5c645;
+  color: black;
   border-radius: 30px;
-  height: 30px;
   font-size: 20px;
   font-weight: 600;
   cursor: pointer;
+  height: 40px;
 }
 
 .icons img {
   width: 25px;
   height: 25px;
+  background-color: #f5c645;
+  border-radius: 30px;
 }
 
 /*FOOTER SECTION STYLES*/
 .footer-container {
-  background-color: black;
+  background-color: #f5c645;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -189,15 +307,14 @@ form button {
 .social-media-logos img {
   width: 25px;
   height: 25px;
-  background-color: #f5c645;
-  border-radius: 30px;
 }
 
 .footer-text p {
-  color: #f5c645;
+  color: black;
 }
 
 @media (max-width: 712px) {
+  /*NAV BAR STYLES*/
   .nav-container {
     padding: 0 10px;
   }
@@ -206,6 +323,19 @@ form button {
     display: none;
   }
 
+  .join button:first-child {
+    height: 35px;
+    width: 75px;
+    font-size: 12px;
+  }
+
+  .join button:last-child {
+    height: 35px;
+    width: 75px;
+    font-size: 12px;
+  }
+
+  /*HERO SECTION STYLES*/
   .hero-container {
     padding: 40px 0;
   }
@@ -234,6 +364,52 @@ form button {
     height: 250px;
   }
 
+  /*EVENT SECTION STYLES*/
+  .event-container {
+    padding: 40px 0;
+  }
+
+  .event-wrapper {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .event-form form {
+    width: 275px;
+  }
+
+  .event-text {
+    width: 275px;
+  }
+
+  .event-text h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .event-text .events span {
+    padding: 7px;
+    font-size: 13px;
+  }
+
+  .event-form form div label {
+    font-size: 13px;
+  }
+
+  .event-form form div input {
+    height: 1px;
+    width: 93%;
+    font-size: 13px;
+  }
+
+  .event-form form button {
+    font-size: 13px;
+    height: 20px;
+  }
+
+  /*BOTTOM SECTION STYLES*/
   .bottom-container {
     padding: 40px 0;
     display: flex;
@@ -242,7 +418,7 @@ form button {
 
   .bottom-wrapper {
     flex-direction: column;
-    gap: 10px;
+    gap: 50px;
     width: 50%;
   }
 
@@ -260,5 +436,23 @@ form button {
 
   .bottom-form form {
     width: 275px;
+  }
+
+  .bottom-form form div label {
+    font-size: 13px;
+  }
+
+  .bottom-form form div input {
+    height: 15px;
+    font-size: 13px;
+  }
+
+  .bottom-form form div .textarea {
+    height: 50px;
+  }
+
+  .bottom-form form button {
+    font-size: 13px;
+    height: 20px;
   }
 }

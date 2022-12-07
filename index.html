@@ -22,6 +22,9 @@
           <h1>TGW Events</h1>
         </div>
         <div class="join">
+          <button>
+            <a class="to-event" href="#event">Schedule an Event</a>
+          </button>
           <button><a href="#contact">Contact Us</a></button>
         </div>
       </div>
@@ -39,6 +42,38 @@
         </div>
         <div class="hero-images">
           <img id="slide" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!--PICK AN EVENT-->
+    <div id="event" class="event-container">
+      <div class="event-wrapper">
+        <div class="event-text">
+          <h1>Pick and schedule an Event</h1>
+          <div class="events">
+            <span id="wedding-event">Wedding</span>
+            <span id="luncheon-event">Luncheon</span>
+            <span id="party-event">Party</span>
+            <span id="get-together-event">Get Together</span>
+          </div>
+        </div>
+        <div class="event-form">
+          <form action="">
+            <div>
+              <label for="">Pick a date</label>
+              <input type="date" />
+            </div>
+            <div>
+              <label for="">Schedule a time</label>
+              <input type="time" name="" id="" />
+            </div>
+            <div>
+              <label for="">Number of tickets</label>
+              <input type="number" name="" id="" />
+            </div>
+            <button>Submit</button>
+          </form>
         </div>
       </div>
     </div>
@@ -105,5 +140,6 @@
     </div>
 
     <script src="index.js"></script>
+    <script src="event.js"></script>
   </body>
 </html>
