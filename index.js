@@ -20,3 +20,11 @@ function changeImg() {
 }
 
 window.onload = changeImg;
+
+var eventInput = document.getElementById("eventInput");
+eventInput.addEventListener("change", change);
+function change() {
+  var heroButton = document.getElementById("heroButton");
+  heroButton.innerText = "View " + eventInput.value + " Events";
+  console.log(eventInput.value);
+}

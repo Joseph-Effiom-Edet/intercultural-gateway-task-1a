@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
     <script
-      src="https://kit.fontawesome.com/0ea0535086.js"
+      src="https://kit.fontawesome.com/76ac00d480.js"
       crossorigin="anonymous"
     ></script>
     <title>TGW event</title>
@@ -18,14 +18,13 @@
         <div class="logo">
           <img src="./assets/IMG-20221206-WA0004.jpg" alt="" />
         </div>
-        <div class="nav-text">
-          <h1>TGW Events</h1>
+        <div class="nav-img">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
         </div>
         <div class="join">
-          <button>
-            <a class="to-event" href="#event">Schedule an Event</a>
-          </button>
-          <button><a href="#contact">Contact Us</a></button>
+          <button>Log In</button>
+          <button>Sign Up</button>
         </div>
       </div>
     </div>
@@ -34,13 +33,13 @@
     <div class="hero-container">
       <div class="hero-wrapper">
         <div class="hero-text">
-          <h1>Welcome</h1>
+          <h1>Do The New Year Right</h1>
           <p>
-            To TGW Events, where we make your dream event a reality. Be it a
-            wedding event, party, luncheon, etc. TGW Events has got you covered.
+            We've curated the best events near you to get your 2023 started.
           </p>
         </div>
         <div class="hero-images">
+          <button id="heroButton">View Lagos Events</button>
           <img id="slide" alt="" />
         </div>
       </div>
@@ -49,55 +48,74 @@
     <!--PICK AN EVENT-->
     <div id="event" class="event-container">
       <div class="event-wrapper">
-        <div class="event-text">
-          <h1>Browse Event by Categoty</h1>
-          <div class="events">
-            <div class="event-img">
-              <img
-                src="https://images.unsplash.com/photo-1499364615650-ec38552f4f34?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGNvbmNlcnRzfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                alt=""
-              />
-              <p>Concerts</p>
-            </div>
-            <div class="event-img">
-              <img
-                src="https://images.unsplash.com/photo-1561525140-c2a4cc68e4bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8ZmFtaWx5fGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                alt=""
-              />
-              <p>Family</p>
-            </div>
-            <div class="event-img">
-              <img
-                src="https://images.unsplash.com/photo-1588928781379-c355ab3edc9b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHRoZWF0ZXJ8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                alt=""
-              />
-              <p>Theater</p>
-            </div>
-            <div class="event-img">
-              <img
-                src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHNwb3J0c3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"
-                alt=""
-              />
-              <p>Sports</p>
-            </div>
+        <div class="event-top-wrapper">
+          <div class="event-top-wrapper-search">
+            <span>Popular In</span>
+            <input id="eventInput" type="text" placeholder="Lagos" />
+          </div>
+          <div class="event-top-wrapper-cat">
+            <span id="all">All</span>
+            <span id="forYou">For You</span>
+            <span id="online">Online</span>
+            <span id="today">Today</span>
+            <span id="thisWeekend">This Weekend</span>
+            <span id="free">Free</span>
+            <span id="music">Music</span>
+            <span id="food&Drinks">Food & Drink</span>
+            <span id="charity&Causes">Charity & Causes</span>
           </div>
         </div>
-        <div class="event-form">
-          <form action="">
-            <div>
-              <label for="">Pick a date</label>
-              <input type="date" />
+        <div class="event-sub-wrapper">
+          <div class="event-text">
+            <h1>Browse Event by Categoty</h1>
+            <div class="events">
+              <div class="event-img">
+                <img
+                  src="https://images.unsplash.com/photo-1499364615650-ec38552f4f34?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGNvbmNlcnRzfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                  alt=""
+                />
+                <p>Concerts</p>
+              </div>
+              <div class="event-img">
+                <img
+                  src="https://images.unsplash.com/photo-1561525140-c2a4cc68e4bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8ZmFtaWx5fGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                  alt=""
+                />
+                <p>Family</p>
+              </div>
+              <div class="event-img">
+                <img
+                  src="https://images.unsplash.com/photo-1588928781379-c355ab3edc9b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHRoZWF0ZXJ8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                  alt=""
+                />
+                <p>Theater</p>
+              </div>
+              <div class="event-img">
+                <img
+                  src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHNwb3J0c3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"
+                  alt=""
+                />
+                <p>Sports</p>
+              </div>
             </div>
-            <div>
-              <label for="">Schedule a time</label>
-              <input type="time" name="" id="" />
-            </div>
-            <div>
-              <label for="">Number of tickets</label>
-              <input type="number" name="" id="" />
-            </div>
-            <button>Submit</button>
-          </form>
+          </div>
+          <div class="event-form">
+            <form action="">
+              <div>
+                <label for="">Pick a date</label>
+                <input type="date" />
+              </div>
+              <div>
+                <label for="">Schedule a time</label>
+                <input type="time" name="" id="" />
+              </div>
+              <div>
+                <label for="">Number of tickets</label>
+                <input type="number" name="" id="" />
+              </div>
+              <button>Submit</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
