@@ -40,22 +40,10 @@
   gap: 10px;
 }
 
-.join button:first-child {
+.join button {
   border: 1px solid #f5c645;
   background-color: black;
   color: #f5c645;
-  font-weight: 700;
-  height: 50px;
-  width: 150px;
-  border-radius: 30px;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.join button:last-child {
-  border: 1px solid #f5c645;
-  background-color: #f5c645;
-  color: black;
   font-weight: 700;
   height: 50px;
   width: 150px;
@@ -120,7 +108,7 @@ button a {
 
 /*PICK AN EVENT STYLES*/
 .event-container {
-  background-color: #f5c645;
+  background-color: white;
   padding: 100px 0 100px 150px;
 }
 
@@ -153,8 +141,8 @@ button a {
   border: none;
   outline: none;
   padding: 10px;
-  background-color: #f5c645;
-  border-bottom: 1px solid black;
+  background-color: white;
+  border-bottom: 1px solid #f5c645;
   font-size: 30px;
 }
 
@@ -182,7 +170,7 @@ button a {
   display: block;
   height: 2px;
   width: 0;
-  background-color: black;
+  background-color: #f5c645;
   bottom: -1px;
   left: 0px;
   transition: all ease-in 250ms;
@@ -242,7 +230,7 @@ button a {
 }
 
 .selected {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #f5c645;
 }
 
 .event-form {
@@ -264,7 +252,7 @@ button a {
 
 .event-form form div input {
   height: 30px;
-  border: 1px solid black;
+  border: 1px solid #f5c645;
   border-radius: 30px;
   padding: 10px;
   font-size: 20px;
@@ -385,7 +373,7 @@ form div {
 
 /*FOOTER SECTION STYLES*/
 .footer-container {
-  background-color: #f5c645;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -402,10 +390,14 @@ form div {
 .social-media-logos img {
   width: 25px;
   height: 25px;
+  background-color: #f5c645;
+  border-radius: 50%;
+  border: 1px solid white;
 }
 
 .footer-text p {
   color: black;
+  font-weight: 600;
 }
 
 @media (max-width: 712px) {
@@ -526,8 +518,7 @@ form div {
     border: none;
     outline: none;
     padding: 5px;
-    background-color: #f5c645;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #f5c645;
     font-size: 15px;
   }
 
@@ -587,7 +578,8 @@ form div {
   }
 
   .event-form form div label {
-    font-size: 13px;
+    font-size: 15px;
+    line-height: 40px;
   }
 
   .event-form form div input {
@@ -597,8 +589,7 @@ form div {
   }
 
   .event-form form button {
-    font-size: 13px;
-    height: 20px;
+    font-size: 15px;
   }
 
   /*BOTTOM SECTION STYLES*/
@@ -631,7 +622,8 @@ form div {
   }
 
   .bottom-form form div label {
-    font-size: 13px;
+    font-size: 15px;
+    line-height: 40px;
   }
 
   .bottom-form form div input {
@@ -644,7 +636,6 @@ form div {
   }
 
   .bottom-form form button {
-    font-size: 13px;
-    height: 20px;
+    font-size: 15px;
   }
 }
